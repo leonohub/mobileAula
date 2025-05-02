@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="list">
+            <ul id="ulTasks">
+                
+            </ul>
+        </div>
+        <button id="createButton" onclick="showModal()">Criar Tarefa</button>
+        
+        <!-- modal -->
+        <div id="modalCreate">
+            <p id="closeModal" onclick="closeModal()">&times;</p>
+            <label for="name">Nome da tarefa:</label>
+            <input type="text" name="name" id="name"><br>
+            <label for="desc">Descrição da tarefa:</label>
+            <input type="text" name="desc" id="desc"><br>
+            <button id="create" onclick="getInputs()">Criar Tarefa</button>
+        </div>
+    </div>
+        
+<script src="script.js"></script>
+</body>
+</html>

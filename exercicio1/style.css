@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 40px;
+    height: 100vh;
+    width: 100vw;
+}
+
+#list {
+    width: 60%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+#ulTasks {
+    list-style: none;
+    width: 100%;
+}
+
+#ulTasks li {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#ulTasks li h1 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#ulTasks li p {
+    font-size: 14px;
+    color: #444;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.faltando {
+    background-color: #ff9e9e;
+}
+
+.concluido {
+    background-color: #b7f7a8;
+    text-decoration: line-through;
+    opacity: 0.8;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    background-color: #5c6bc0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #3f51b5;
+}
+
+#modalCreate {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+#modalCreate label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#modalCreate input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#closeModal{
+    cursor: pointer;
+}
